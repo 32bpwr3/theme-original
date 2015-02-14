@@ -74,6 +74,7 @@
               <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                   <li><a href="/">Blog</a></li>
+                  <li><a href="http://sitrep.freshdesk.com">Submit a Story</a></li>
                   {% if pages %}
                   {% for page in pages %}
                   <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
@@ -326,7 +327,7 @@
 
 <script type="text/javascript" src="http://assets.freshdesk.com/widget/freshwidget.js"></script>
 <script type="text/javascript">
-	FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=Submit+a+tip+or+story&submitThanks=Thank+you+for+your+submission&screenshot=no&searchArea=no", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#006063", "alignment": "4", "offset": "235px", "submitThanks": "Thank you for your submission", "formHeight": "500px", "screenshot": "no", "url": "https://sitrep.freshdesk.com"} );
+	FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=Submit+a+Story&submitThanks=Thank+you+for+your+submission!&screenshot=no&searchArea=no", "backgroundImage": "http://assets.freshdesk.com/widget/help-button.png", "widgetType": "popup", "buttonType": "image", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#006063", "alignment": "4", "offset": "145px", "submitThanks": "Thank you for your submission!", "formHeight": "500px", "screenshot": "no", "url": "https://sitrep.freshdesk.com"} );
 </script>
 </body>
 </html>
